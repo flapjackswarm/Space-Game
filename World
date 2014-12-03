@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+public class World
+{
+  public static ArrayList<Room> rooms;
+  public Room currentRoom;
+  //public Player p;
+  
+  public World()
+  {
+    Room planet1 = new Room("planet1", 1, 1, 2, 8 /*Itemlist i, ArrayList<LivingBeing> b*/);
+    Room planet2 = new Room("planet2", 2, 3, 4, 1 /*Itemlist i, ArrayList<LivingBeing> b*/);
+    Room planet3 = new Room("planet3", 3, 5, 6, 1 /*Itemlist i, ArrayList<LivingBeing> b*/);
+    Room planet4 = new Room("planet4", 4, 7, 8, 2 /*Itemlist i, ArrayList<LivingBeing> b*/);
+    Room planet5 = new Room("planet5", 5, 7, 8, 2 /*Itemlist i, ArrayList<LivingBeing> b*/);
+    Room planet6 = new Room("planet6", 6, 7, 8, 3 /*Itemlist i, ArrayList<LivingBeing> b*/);
+    Room planet7 = new Room("planet7", 7, 7, 8, 3 /*Itemlist i, ArrayList<LivingBeing> b*/);
+    Room planet8 = new Room("death star", 8, 8, 8, 4 /*Itemlist i, ArrayList<LivingBeing> b*/);
+    Room blank = new Room();
+    rooms.add(planet1);
+    rooms.add(planet2);
+    rooms.add(planet3);
+    rooms.add(planet4);
+    rooms.add(planet5);
+    rooms.add(planet6);
+    rooms.add(planet7);
+    rooms.add(planet8);
+    rooms.add(blank);
+  }
+  
+  public static ArrayList<Room> getRooms()
+  {
+   return rooms; 
+  }
+}
